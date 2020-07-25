@@ -3,14 +3,19 @@
 <head>
     <title>Debit card Payment</title>
 </head>
-<div align="center">
-    <h1>Debit Card Payment</h1>
-    <p>Card Number</p><input type="text" name="card_no"><br><br> Expiry Month and year:<br><input type="text" maxlength="2" minlength="2" name="mm" placeholder="MM">&nbsp;&nbsp;&nbsp;
-    <input type="text" maxlength="2" minlength="2" name="yy" placeholder="YY">
-    <br>
-    <p>CVV</p><input type="text" maxlength="3" minlength="3" name="cvv" placeholder="CVV"><br><br>
-    <input type="submit" value="Pay Now">
 
-</div>
+<body>
+    <form action="payment_success.html" method="POST">
+        <div align="center">
+            <h1>Debit Card Payment</h1>
+            <p>Card Number</p><input type="text" name="card_no"><br><br> Expiry Month and year:<br><input type="text" maxlength="2" minlength="2" name="mm" placeholder="MM">&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="2" minlength="2" name="yy" placeholder="YY">
+            <br>
+            <p>CVV</p><input type="text" maxlength="3" minlength="3" name="cvv" placeholder="CVV"><br><br>
+            <input type="submit" value="Pay Now">
+
+        </div>
+    </form>
+</body>
 
 </html>
