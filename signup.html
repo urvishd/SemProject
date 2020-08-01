@@ -2,19 +2,84 @@
 
 <head>
     <title>Register</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 50px auto;
+            width: 600px;
+            background-color: rgb(199, 230, 173);
+        }
+        
+        h1 {
+            text-align: center;
+            color: brown;
+        }
+        
+        label {
+            font-size: large;
+            margin-left: 0px;
+            margin-right: 20px;
+            text-shadow: 1px 1px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .card_no {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            width: 50%;
+            padding: 11px;
+            margin: 7px 0 17px 0;
+            display: inline-block;
+            border: none;
+            border-radius: 0.3rem;
+            background: #f1f1f1;
+        }
+        
+        .button1 {
+            background-color: #af4c96;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 16px 25px;
+            margin-left: 65px;
+            cursor: pointer;
+            width: 25%;
+            opacity: 0.9;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+        
+        .button2 {
+            background-color: #4caf51;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 16px 25px;
+            margin-left: 65px;
+            cursor: pointer;
+            width: 70%;
+            opacity: 0.9;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+    </style>
 </head>
 
 <body>
     <form action="login.html" method="GET">
-        <h1>Register</h1>
-        Name:<input type="text" name="uname" required><br><br> Gender: <input type="radio" name="gender" id="male" value="male">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" value="male" id="female">
-        <label for="female">Female</label><br><br> Email:
-        <input type="email" name="mail" required><br><br> Mobile:
-        <input type="text" name="Mobile" maxlength="10" minlength="10" required><br><br>
-        <input type="submit" value="Submit">
+        <div align="center">
+            <h1>Register to Dealbaba</h1><br><label> Name:</label>
+            <input type="text" class="card_no" name="uname" required><br><br><label style="margin-right: 40px; margin-left: -80px;">Gender:</label> <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="female">
+            <label for="female">Female</label><br><br><br> <label>Email:</label>
+            <input type="email" class="card_no" name="mail" required><br><br> <label>Mobile:</label>
+            <input type="text" class="card_no" name="Mobile" maxlength="10" minlength="10" required><br><br><br>
+            <button class="button1" type="submit" value="Submit">Register</button><br><br>
+
     </form>
+    <h3 style="margin-left: 65px;">Existing User?</h3>
+    <button value="login" class="button2" onclick="location.href='login.html'">Login here!</button>
+    </div>
 </body>
 
 </html>

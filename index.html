@@ -2,22 +2,74 @@
 
 <head>
     <title>Dealbaba</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: deeppink;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #af4c96;
+        }
+        
+        .button1 {
+            background-color: #af4c96;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 16px 20px;
+            margin: 8px 10px;
+            cursor: pointer;
+            width: 10%;
+            opacity: 0.9;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="topnav">
-        <a class href="MyDeals.html">Your Orders</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#">Categories</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="complaint.html">Help & Support</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="profile.html">My Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#">Logout</a>
-    </div>
-    <h2>This is index Page</h2>
+    <ul>
+        <li>
+            <a> </a>
+        </li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="MyDeals.html">Your Orders</a></li>
+        <li><a href="#news">Categories</a></li>
+        <li><a href="complaint.html">Help & Support</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+
+
 
     <h1>Trending offers:</h1>
-    <h3>Amazon</h3>
-    <h4>Get ₹500 voucher at ₹475!</h4>
-    <button type="button" value="purchase" onclick="location.href='checkout.html'">Purchase</button>
+    <h2>Amazon:</h2>
+    <h3>Get ₹500 voucher at ₹475!</h3>
+    <button class="button1" type="button" value="purchase" onclick="location.href='checkout.html'">Purchase</button>
     <h3>Flipkart</h3><br>
     <h3>Myntra</h3><br><br>
     <hr>

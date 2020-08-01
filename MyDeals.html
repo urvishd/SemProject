@@ -2,13 +2,50 @@
 
 <head>
     <title>Your purchases</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: deeppink;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #af4c96;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class href="MyDeals.html">Your Orders</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="complaint.html">Help & Support</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="profile.html">My Profile</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <ul>
+        <li>
+            <a> </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="MyDeals.html">Your Orders</a></li>
+        <li><a href="#news">Categories</a></li>
+        <li><a href="complaint.html">Help & Support</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+
     <h1>No Purchase Found!!</h1>
 </body>
 
