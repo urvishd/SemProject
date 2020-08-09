@@ -73,8 +73,10 @@
             <p> Username</p><input class="textb" type="text" name="uname" minlength="10" maxlength="10" required><br>
             <p>Password</p>
             <input class="textb" type="password" name="passwd" minlength="6" maxlength="15" required><br>
-            <button type="submit" class="button1" value="Login">Login</button><br><br>
+            <button onclick="mobile_verify" class="button1" value="Login">Login</button><br><br>
+            <p id="errorp"></p>
     </form>
+
     <h3>New to Dealbaba?</h3>
     <button value="signup" class="button2" onclick="location.href='signup.html'">Sign Up here!</button><br><br>
     <button value="contact" class="button2" onclick="location.href='contact.html'">Contact Us</button>

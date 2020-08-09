@@ -49,6 +49,16 @@
             border: 2px solid;
         }
     </style>
+    <script>
+        function loglog() {
+            if (document.getElementById("loginout").innerHTML == "Logout") {
+                alert("You are Logged Out!!");
+                document.getElementById("loginout").innerHTML = "Login";
+            } else {
+                window.location.href = "login.html";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -61,7 +71,7 @@
         <li><a href="#news">Categories</a></li>
         <li><a href="complaint.html">Help & Support</a></li>
         <li><a href="profile.html">My Profile</a></li>
-        <li><a href="login.html">Logout</a></li>
+        <li><a href="#" onclick="loglog();"><label id="loginout">Logout</label></a></li>
     </ul>
 
 

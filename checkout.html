@@ -35,10 +35,20 @@
             border: 2px solid;
         }
     </style>
+    <script>
+        function paymentopen() {
+
+            if (document.getElementById("dcard").checked) {
+                window.location.href = "Dcard.html";
+            } else {
+                window.location.href = "Netbanking.html";
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <form action="Dcard.html" method="GET">
+    <form id="checkout_p" method="GET">
         <div>
             <h2>Amount : 500
             </h2>
@@ -47,7 +57,7 @@
             <input class="radio1" type="radio" name="method" value="dcard" id="dcard"> Debit Card<br><br>
             <input class="radio1" type="radio" name="method" value="netbanking" id="netbanking"> Netbanking
             <br><br>
-            <button class="button1" type="submit" value="Pay Securely">Pay Securely</button>
+            <input type="button" class="button1" type="submit" onclick="paymentopen();" value="Pay Securely"></button>
         </div>
     </form>
 </body>
