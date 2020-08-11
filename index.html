@@ -2,10 +2,27 @@
 
 <head>
     <title>Dealbaba</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, address, phone, icons" />
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            font: 16px/1.6 Arial, sans-serif;
         }
         
         ul {
@@ -48,6 +65,285 @@
             border-radius: 5px;
             border: 2px solid;
         }
+        
+        @media screen and (max-width: 600px) {
+            .topnav a,
+            .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        
+        .row {
+            margin: 0 -5px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: lightgrey;
+        }
+        
+        #a {
+            background-color: rgb(0, 81, 255);
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 2px salmon;
+            font-style: normal;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.8;
+        }
+        
+        #a:hover {
+            opacity: 1;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 150px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        
+        @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html {
+            background-color: #eaf0f2;
+        }
+        
+        header {
+            text-align: center;
+            padding-top: 100px;
+            margin-bottom: 190px;
+        }
+        
+        header h1 {
+            font: normal 32px/1.5 'Open Sans', sans-serif;
+            color: #3F71AE;
+            padding-bottom: 16px;
+        }
+        
+        header h2 {
+            color: #F05283;
+        }
+        
+        header span {
+            color: #3F71EA;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+        
+        @media (max-height:800px) {
+            footer {
+                position: static;
+            }
+            header {
+                padding-top: 40px;
+            }
+        }
+        
+        .footer-distributed {
+            background-color: #2c292f;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 50px 50px 60px 50px;
+            margin-top: 80px;
+        }
+        
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .footer-distributed .footer-left {
+            width: 30%;
+        }
+        
+        .footer-distributed h3 {
+            color: #ffffff;
+            font: normal 36px 'Cookie', cursive;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-left img {
+            width: 45%;
+        }
+        
+        .footer-distributed h3 span {
+            color: #e0ac1c;
+        }
+        
+        .footer-distributed .footer-links {
+            color: #ffffff;
+            margin: 20px 0 12px;
+        }
+        
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .footer-distributed .footer-company-name {
+            color: #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-center {
+            width: 35%;
+        }
+        
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+        }
+        
+        .footer-distributed .footer-center p a {
+            color: #e0ac1c;
+            text-decoration: none;
+            ;
+        }
+        /* Footer Right */
+        
+        .footer-distributed .footer-right {
+            width: 30%;
+        }
+        
+        .footer-distributed .footer-company-about {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .footer-distributed .footer-icons {
+            margin-top: 25px;
+        }
+        
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 880px) {
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-center,
+            .footer-distributed .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .footer-distributed .footer-center i {
+                margin-left: 0;
+            }
+        }
     </style>
     <script>
         function loglog() {
@@ -57,6 +353,26 @@
             } else {
                 window.location.href = "login.html";
             }
+        }
+
+        function pur() {
+            window.location.href = "checkout.html";
+        }
+
+        function onclick5() {
+            window.location = "https://www.amazon.in/";
+        }
+
+        function onclick1() {
+            window.location = "https://www.flipkart.com/";
+        }
+
+        function onclick2() {
+            window.location = "https://www.snapdeal.com/";
+        }
+
+        function onclick3() {
+            window.location = "https://paytm.com/";
         }
     </script>
 </head>
@@ -74,16 +390,207 @@
         <li><a href="#" onclick="loglog();"><label id="loginout">Logout</label></a></li>
     </ul>
 
+    <br><br><br>
+
+    <h1 style="padding-bottom: 10px;">Trending offers</h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="amazon.png" alt="Avatar" id="am" style="width:40%;" onclick="onclick5();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Amazon</h3>
+                <p>Upto 10% CD Voucher Rewards</p>
+                <input type="button" id="a" value="Activate Offer" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="flipkart.png" alt="Avatar" style="width:82%;" onclick="onclick1();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Flipkart</h3>
+                <p>Rs.1300 cashback offers</p>
+                <input type="button" id="a" value="Activate Offer" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="snapdeal.png" alt="Avatar" style="width:107%;" onclick="onclick2();" width="100" height="130">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Snapdeal</h3>
+                <p>Upto 5% CD voucher</p>
+                <input type="button" id="a" value="Activate Offer" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="paytm.png" alt="Avatar" style="width:39%;" onclick="onclick3();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Paytm</h3>
+                <p>Rs.500 cashback offers</p>
+                <input type="button" id="a" value="Activate Offer" onclick="pur();"></input>
+            </div>
+        </div>
+    </div>
+    <br><br>
 
 
-    <h1>Trending offers:</h1>
-    <h2>Amazon:</h2>
-    <h3>Get ₹500 voucher at ₹475!</h3>
-    <button class="button1" type="button" value="purchase" onclick="location.href='checkout.html'">Purchase</button>
-    <h3>Flipkart</h3><br>
-    <h3>Myntra</h3><br><br>
-    <hr>
-    <h1>New offers are coming soon....</h1>
+    <h1 style="padding-bottom: 10px;">Deals and Vouchers
+    </h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="amazon.png" alt="Avatar" id="am" style="width:40%;" onclick="onclick5();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Amazon</h3>
+                <p>Rs.500 Coupon at Rs.490</p>
+                <input type="button" id="a" value="Purchase" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="flipkart.png" alt="Avatar" style="width:82%;" onclick="onclick1();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Flipkart</h3>
+                <p>Fashion voucher of Rs.1000 at Rs.920</p>
+                <input type="button" id="a" value="Purchase" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="snapdeal.png" alt="Avatar" style="width:107%;" onclick="onclick2();" width="130" height="130">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Snapdeal</h3>
+                <p>Electronics voucher upto 500 back in Rs.300 </p>
+                <input type="button" id="a" value="Purchase" onclick="pur();"></input>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="paytm.png" alt="Avatar" style="width:39%;" onclick="onclick3();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Paytm</h3>
+                <p>Upto 50 back on bill payment in just Rs.30</p>
+                <input type="button" id="a" value="Purchase" onclick="pur();"></input>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h1 style="padding-bottom: 10px;">Cashback and Promocodes</h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="amazon.png" alt="Avatar" id="am" style="width:40%;" onclick="onclick5();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Amazon</h3>
+                <p>Upto 10% CD Voucher Rewards</p>
+                <input type="button" id="a" value="Show Code" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="flipkart.png" alt="Avatar" style="width:83%;" onclick="onclick1();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Flipkart</h3>
+                <p>Rs.1300 cashback offers</p>
+                <input type="button" id="a" value="Show Code" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="snapdeal.png" alt="Avatar" style="width:107%;" onclick="onclick2();" width="100" height="130">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Snapdeal</h3>
+                <p>Upto 5% CD voucher</p>
+                <input type="button" id="a" value="Show Code" onclick="pur();"></input>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="tooltip">
+                    <img src="paytm.png" alt="Avatar" style="width:39%;" onclick="onclick3();">
+                    <span class="tooltiptext">Click to Redirect</span>
+                </div>
+                <h3>Paytm</h3>
+                <p>Rs.500 cashback offers</p>
+                <input type="button" id="a" value="Show Code" onclick="pur();"></input>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img src="logo1.png">
+            <h3>Save on Everything!</h3>
+            <br>
+
+
+            <p class="footer-company-name">© 2020 Dealbaba Co. Ltd. All rights Reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Nadiad-387001</span></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 923636860</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:devaniurvish881@gmail.com">support@dealbaba.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Be partener with us</span> Provide best and exiciting Offers to user and earn more customers</p>
+            <div class="footer-icons">
+                <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                <a href="http://www.youtube.com"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
 
 
 </body>
