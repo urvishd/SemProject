@@ -72,12 +72,19 @@
             <label for="male">Male</label>
             <input type="radio" name="gender" value="male" id="female">
             <label for="female">Female</label><br><br><br> <label>Email:</label>
-            <input type="email" class="card_no" name="mail" required><br><br> <label>Mobile:</label>
-            <input type="text" class="card_no" name="Mobile" maxlength="10" minlength="10" required><br><br><br>
-            <button class="button1" type="submit" value="Submit">Register</button><br><br>
+            <input style="margin-left: 10px;" type="email" class="card_no" name="mail" required><br><br> <label>Mobile:</label>
+            <input type="text" class="card_no" name="Mobile" maxlength="10" minlength="10" required><br><br>
+
+            <label>Password:</label>
+            <input style="margin-left: -15px;" type="password" class="card_no" name="pass1" required><br><br>
+            <label style="margin-left: -80px;">Confirm Password:</label>
+            <input type="password" class="card_no" name="pass2" required><br><br>
+            <button class="button1" type="submit" value="Submit">Register</button>
+
+
 
     </form>
-    <h3 style="margin-left: 65px;">Existing User?</h3>
+    <h3 style="margin-left: 70px;">Existing User?</h3>
     <button value="login" class="button2" onclick="location.href='login.html'">Login here!</button>
     </div>
 </body>
