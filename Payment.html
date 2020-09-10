@@ -12,6 +12,7 @@
 
 <body>
     <!-- Start: Bootstrap 4 - Payment Form -->
+    <form method="GET" action="payment_success.html"></form>
     <div class="container py-5">
 
         <div class="row">
@@ -33,74 +34,74 @@
                     </ul>
                     <!-- End -->
 
-                    <form method="GET" action="payment_success.html">
-                        <!-- Credit card form content -->
-                        <div class="tab-content">
 
-                            <!-- credit card info-->
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
 
-                            <div id="nav-tab-card" class="tab-pane fade show active">
-                                <p class="alert alert-success">Enter all Details </p>
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="username">Name on Card</label>
-                                        <input required type="text" name="username" placeholder="Urvish Devani" required class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="cardNumber">Card number</label>
-                                        <div class="input-group">
-                                            <input required minlength="16" maxlength="16" type="text" minname="cardNumber" placeholder="Your card number" class="form-control" required>
-                                            <div class="input-group-append">
-                                                <span class="input-group-text text-muted">
+                        <!-- credit card info-->
+
+                        <div id="nav-tab-card" class="tab-pane fade show active">
+                            <p class="alert alert-success">Enter all Details </p>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="username">Name on Card</label>
+                                    <input required type="text" name="username" placeholder="Urvish Devani" required class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardNumber">Card number</label>
+                                    <div class="input-group">
+                                        <input required minlength="16" maxlength="16" type="text" minname="cardNumber" placeholder="Your card number" class="form-control" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text text-muted">
                                                 <i class="fa fa-cc-visa mx-1"></i>
                                                 <i class="fa fa-cc-amex mx-1"></i>
                                                 <i class="fa fa-cc-mastercard mx-1"></i>
                                             </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label><span class="hidden-xs">Expiration</span></label>
+                                            <div class="input-group">
+                                                <input required minlength="2" maxlength="2" type="number" placeholder="MM" name="" class="form-control" required>
+                                                <input required minlength="2" maxlength="2" type="number" placeholder="YY" name="" class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="form-group">
-                                                <label><span class="hidden-xs">Expiration</span></label>
-                                                <div class="input-group">
-                                                    <input required minlength="2" maxlength="2" type="number" placeholder="MM" name="" class="form-control" required>
-                                                    <input required minlength="2" maxlength="2" type="number" placeholder="YY" name="" class="form-control" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group mb-4">
-                                                <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4">
+                                            <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
                                                 <i class="fa fa-question-circle"></i>
                                             </label>
-                                                <input minlength="3" maxlength="3" type="password" required class="form-control">
-                                            </div>
+                                            <input minlength="3" maxlength="3" type="password" required class="form-control">
                                         </div>
-
-
-
                                     </div>
-                                    <button type="button" onclick="location.href='payment_success.html'" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Proceed to Pay  </button>
-                                </form>
-                            </div>
-                    </form>
-                    <!-- End -->
 
-                    <!-- Paypal info -->
-                    <div id="nav-tab-paypal" class="tab-pane fade">
-                        <p>Do Payment in just 1 Click!</p>
-                        <p>
-                            <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Pay via Bank Account</button>
-                        </p>
-                        <p class="text-muted">If you don't have Internet banking please contact your bank or Pay via Debit or Credit card.
-                        </p>
-                    </div>
-                    <!-- End -->
 
-                    <!-- bank transfer info -->
 
-                    <!-- End -->
+                                </div>
+                                <button type="button" onclick="location.href='payment_success.html'" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Proceed to Pay  </button>
+                            </form>
+                        </div>
+
+                        <!-- End -->
+
+                        <!-- Paypal info -->
+                        <div id="nav-tab-paypal" class="tab-pane fade">
+                            <p>Do Payment in just 1 Click!</p>
+                            <p>
+                                <button onclick="location.href='Netbankings.html'" type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Pay via Bank Account</button>
+                            </p>
+                            <p class="text-muted">If you don't have Internet banking please contact your bank or Pay via Debit or Credit card.
+                            </p>
+                        </div>
+                        <!-- End -->
+
+                        <!-- bank transfer info -->
+
+                        <!-- End -->
                     </div>
                     <!-- End -->
 
